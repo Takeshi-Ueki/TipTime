@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/plain_text_input"
+        android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:hint="@string/cost_of_service"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/how_was_the_service"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/plain_text_input" />
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
     <RadioGroup
         android:id="@+id/tip_option"
@@ -76,7 +76,7 @@
         android:id="@+id/tip_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tip_amount"
+        tools:text="Tip Amount' $10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
